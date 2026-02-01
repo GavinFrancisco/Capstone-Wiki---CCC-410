@@ -1,0 +1,6 @@
+REM Opening Powershell example
+DELAY 3000
+WINDOWS r
+DELAY 1000
+STRING powershell "echo 'I could delete a lot of stuff right now lol'; pause"
+ENTER
