@@ -1,0 +1,8 @@
+REM Make sure copslock is on at all times!
+DELAY 3000
+WHILE TRUE
+	IF ($_CAPSLOCK_ON == FALSE) THEN
+		CAPSLOCK
+	END_IF
+	DELAY 100
+END_WHILE
