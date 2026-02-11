@@ -1,0 +1,12 @@
+REM Keep Opening Notepad
+DELAY 3000
+WHILE TRUE
+	WINDOWS r
+	DELAY 300
+	STRING notepad
+	DELAY 500
+	ENTER
+	DELAY 500
+	STRING haha i love notepad!
+	DELAY 100
+END_WHILE
