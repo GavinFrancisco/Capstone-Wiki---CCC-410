@@ -15,7 +15,7 @@ DELAY 100
 UPARROW
 DELAY 100
 ENTER
-DELAY 400
+DELAY 600
 STRING harrison.labrecque@mymail.champlain.edu
 DELAY 400
 ENTER
@@ -34,3 +34,4 @@ ENTER
 DELAY 3000
 
 ALT F4
+
