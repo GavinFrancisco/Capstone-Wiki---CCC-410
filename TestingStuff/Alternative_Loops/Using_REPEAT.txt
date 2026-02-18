@@ -1,0 +1,6 @@
+REM Using DuckyScript's built-in loop
+
+REPEAT 100
+  REM Your commands here
+  ...
+END_REPEAT
